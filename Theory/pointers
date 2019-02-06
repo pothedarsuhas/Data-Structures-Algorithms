@@ -1,0 +1,16 @@
+reference and pointer
+
+call by reference is used in python
+
+pointer is a variable stores the address of another variable
+reference is a variable which referes to another variable
+
+i = [1,2,3]
+j = i
+i[0] = 5
+print(j) #[5, 2, 3]
+
+this means that reference is created as 'j' to 'i'
+hence pointers exist in python
+
+

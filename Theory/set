@@ -1,0 +1,5 @@
+mutable, unordered, unique but elements are immutable
+
+set() is a constructor, not a method
+
+use in keyword to check if something exists

@@ -1,0 +1,11 @@
+dictionary = associative array
+
+has unsorted key value pairs
+
+keys are indexes here. We can use .get() specifying the key to get the value
+
+.values() returns the values
+.pop() pops the pair
+.items() retuns pairs in the form of tuples
+
+use in keyword to check if something exists

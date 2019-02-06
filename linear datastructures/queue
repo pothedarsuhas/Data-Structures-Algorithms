@@ -1,0 +1,7 @@
+queue is ordered FIFO datastructure
+
+has 2 ends
+rear - insert -  enqueue
+front - remove - dequeue
+
+eg- banks, message queue, round robin based scheduling
