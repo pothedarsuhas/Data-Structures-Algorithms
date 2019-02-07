@@ -1,0 +1,21 @@
+work sequentially
+
+works in phases, makes optimized decisions in local scenes thinking that it ll sum up to a global
+optimized decision (decision is taken based on what is right at present)
+
+choosing local optimum leads to global optimum at the end
+
+eg- graph, scheduling algorithms
+
+cashier's algorithm
+finding minimum number of denominations
+
+SJF policy
+avg waiting time is minimum is the goal
+sort in increasing order of burst time and apply FCFS
+
+***these algorithms might not produce optimum results always.
+
+***Easier to design, compared to Divide & Conquer.
+
+***Difficult to prove its correctness.

@@ -1,0 +1,5 @@
+breaks problem in to subtasks of same type, solves them to reach the final goal
+
+base case should be extracted
+
+eg- Binary search

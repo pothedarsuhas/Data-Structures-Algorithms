@@ -1,0 +1,10 @@
+3 steps
+
+1 divide
+2 conquer
+3 combine
+
+eg binary search, quick sort, merge sort
+
+quick sort- all left side elements will be less than the pivot, all right side elements will
+be greater
