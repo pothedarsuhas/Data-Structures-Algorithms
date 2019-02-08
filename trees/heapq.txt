@@ -1,0 +1,3 @@
+priority queues, variation of FIFO queue
+
+insertion order is based on the priority

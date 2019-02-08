@@ -1,0 +1,16 @@
+trees have nodes and branches
+nodes hold data
+
+root is a node that has no parent
+leaf is a node that has no child(ren)
+
+parent ~ node which has out going edge(s)
+child ~ node which has incoming edge(s)
+
+
+tree is non linear datastructure
+
+subtree ~ set of all nodes and edges including all the descendants and parent node
+binary tree ~ tree in which a parent node can have upto 2 children
+binary search tree ~ tree which is binary with a strict condition is imposed such that left child can be less than or equal to parent and
+right child greater than parent in terms of value
