@@ -47,7 +47,7 @@ class stack:
         return self._top + 1
 
     def expose(self):
-        print(self._list)
+        return (self._list)
 
 # if __name__ == "__main__":
 #     s = stack()
