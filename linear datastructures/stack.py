@@ -46,13 +46,16 @@ class stack:
     def size(self):
         return self._top + 1
 
-if __name__ == "__main__":
-    s = stack()
-    s.push("hello")
-    s.push("world")
-    s.pop()
-    print(s.peek())
-    s.pop()
-    print(s.size())
+    def expose(self):
+        print(self._list)
+
+# if __name__ == "__main__":
+#     s = stack()
+#     s.push("hello")
+#     s.push("world")
+#     s.pop()
+#     print(s.peek())
+#     s.pop()
+#     print(s.size())
 
 
