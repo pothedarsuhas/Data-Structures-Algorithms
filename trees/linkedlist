@@ -13,3 +13,20 @@ to find loop in a linked list
 Check if the linkedlist is a palindrome
     traverse list an put the elements in the stack, traverse again an pop the stack if the elements match for every _next of
     a node
+
+removing duplicates from a sorted linked list
+    while traversing compare the next element
+        if same
+            delete it by storing the address of the next node from where we deleted
+
+removing duplicates from a unsorted linked list
+    using hash table
+        when traversing store address we store the addresses in a hash table
+        if encountered by a new element where address is not same
+            then add that element
+        else
+            dont add that element into the linked list
+
+when asked for swap
+    swap the data
+
