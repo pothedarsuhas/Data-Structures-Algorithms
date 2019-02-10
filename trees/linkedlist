@@ -1,0 +1,15 @@
+to print the middle node of the linked list
+    initialise two pointer, fast which skips 2 nodes and slow one which skips 1 node, and traverse the list at the same time
+    when the fast pointer reaches the none or end, slow pointer reaches the mid.
+
+printing reverse of a linked list
+    write return statement after the next node traversal statement using recursion
+
+to find loop in a linked list
+    Push the addresses into a hash table and check if the previously entered address comes up again(With id()). If it does,
+    the loop exists at that point.
+    To count the number of elements in the loop, check for the number of elements in between the hash table repitition - 1.
+
+Check if the linkedlist is a palindrome
+    traverse list an put the elements in the stack, traverse again an pop the stack if the elements match for every _next of
+    a node

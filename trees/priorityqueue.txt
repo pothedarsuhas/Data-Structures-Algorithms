@@ -1,0 +1,24 @@
+priority queues, variation of FIFO queue
+
+insertion order is based on the priority
+
+application - scheduling
+
+package heapq
+
+heapify() converts the list into a minheap, least element at the first, still maintaining the order
+heappop() removes item maintaining the order of the queue
+heappush() removes item maintaining the order of the queue
+
+minheap and maxheap forms min at front and max at front respectively
+
+binary heap ~ implement a priority queue
+list based insertion O(n), del O(nlogn)
+binary heap(binary tree) based insertion & deletion O(logn)
+
+binary tree ~ min heap
+1. It has all nodes in all levels except leaf ~ complete binary trees
+2. value at each node is less than its children
+
+in min/max heaps
+index of child // 2 = index of parent when indices start from 1

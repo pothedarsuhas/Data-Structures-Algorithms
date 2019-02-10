@@ -1,0 +1,20 @@
+they are BST with self balancing ability
+
+rules
+1 every node is colored either red or black
+2 root must always be black
+3 red node must always have a black parent and black child node, no red-red child-parent relation
+4 unsuccessful search path
+    every path from a root to a node, node must go through exact number of black nodes; every path shoul dhave same no of black nodes
+
+insertion
+1 when tree not empty node is inserted as red
+2 when tree empty node is inserted as black
+3 if parent of inserted not is black
+    do nothing
+  elif parent is red
+        if sibling is red
+            recolor and check again
+        elif parent is black or absent
+            rotate and recolor
+
