@@ -31,7 +31,7 @@ class queue():
         if self.isEmpty():
             raise emptyqueueerror("Trying to dequeue an empty queue")
         else:
-            self._list.pop(0)
+            return self._list.pop(0)
 
 if __name__ == "__main__":
     q = queue()

@@ -8,7 +8,7 @@ parent ~ node which has out going edge(s)
 child ~ node which has incoming edge(s)
 
 
-tree is non linear datastructure
+tree is non linear/hierarchial datastructure
 
 subtree ~ set of all nodes and edges including all the descendants and parent node
 binary tree ~ tree in which a parent node can have upto 2 children

@@ -31,6 +31,8 @@ class linkedlist:
     def _traverse(self, node):
         if node is None:
             return None
+        # elif id(node) == id(self._get_root()):
+        #     print(node._get_data())
         else:
             print(node._get_data())
             self._traverse(node._get_next()) # if you place this above the above line the linked list is printed in the reverse order
@@ -110,38 +112,70 @@ class linkedlist:
             r = r._next
         return count
 
+    def swap_head_tail(self):
+        r = self._get_root()
+        head = self._get_root()
+        head._next = None
+
+        while r._next is not None:
+            r = r._next
+        tail = r._next
+        r = self._get_root()
+        r = r._next
+        tail._next = r
+
+        while tail._next is not None:
+            tail = tail._next
+
+        tail._next = head
+
+    def make_circle(self):
+        r = self._get_root()
+        s = self._get_root()
+
+        while r._next is not None:
+            r = r._next
+
+        r._next = s
 
 
 
-# l = linkedlist(10)
-#
-# a = [20,30,40,50,60]
-#
-# l.insert_front(100)
-#
-# r = l._get_root()
-#
-# if r._get_next() is not None:
-#     r = r._get_next()
-#
-# for i in a:
-#
-#     r._insert_node(i)
-#     r = r._get_next()
-#
-#
-# l.insert_end(8)
-#
-# l.insert_n(13, 5)
-#
-# l.delete_front()
-# l.delete_last()
-# l.delete_n(7)
-#
-# # l.delete_list_data()
-#
-# # del l
-#
-# # print(l.length())
-#
-# l.traverse()
+
+
+
+l = linkedlist(10)
+
+a = [20,30,40,50,60]
+
+l.insert_front(100)
+
+r = l._get_root()
+
+if r._get_next() is not None:
+    r = r._get_next()
+
+for i in a:
+
+    r._insert_node(i)
+    r = r._get_next()
+
+
+l.insert_end(8)
+
+l.insert_n(13, 5)
+
+l.delete_front()
+l.delete_last()
+l.delete_n(5)
+
+# l.delete_list_data()
+
+# del l
+
+# print(l.length())
+
+#l.swap_head_tail()
+
+l.make_circle()
+
+l.traverse()

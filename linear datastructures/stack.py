@@ -35,8 +35,9 @@ class stack:
     def pop(self):
         if self.isEmpty():
             raise emptystackerror("Trying to pop an empty stack")
-        self._list.pop()
+
         self._top -= 1
+        return self._list.pop()
 
     def peek(self):
         if self.isEmpty():

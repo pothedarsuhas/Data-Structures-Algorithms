@@ -58,7 +58,59 @@ class binarytree:
     def in_order(self):
         self._in_order(self.get_root())
 
+    def _pre_order(self, node):
+        if node is None:
+            return None
+        else:
+            print(node.get_data())
+            self._pre_order(node.get_left_child())
+            self._pre_order(node.get_right_child())
 
+    def pre_order(self):
+        self._pre_order(self.get_root())
+
+    def _post_order(self, node):
+        if node is None:
+            return None
+        else:
+            self._post_order(node.get_left_child())
+            self._post_order(node.get_right_child())
+            print(node.get_data())
+
+    def post_order(self):
+        self._post_order(self.get_root())
+
+    def _level_order(self, node):
+        if node is None:
+            return
+
+        q = []
+        q.append(node)
+
+        while len(q)>0:
+            print(q[0].get_data())
+            node = q.pop(0)
+
+            if node.get_left_child() is not None:
+                q.append(node._left)
+
+            if node.get_right_child() is not None:
+                q.append(node._right)
+
+
+    def level_order(self):
+        self._level_order(self.get_root())
+
+
+
+
+'''
+             5
+           /    \
+          3      7
+         / \    /
+        2   4  6
+'''
 
 t = binarytree(5)
 
@@ -72,5 +124,10 @@ left_child.insert_right(4)
 right_child = t.get_root().get_right_child()
 right_child.insert_left(6)
 
-print(t.in_order())
-
+(t.pre_order())
+print('####')
+(t.in_order())
+print('####')
+(t.post_order())
+print('####')
+(t.level_order())
