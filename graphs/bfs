@@ -1,0 +1,4 @@
+traverse all nodes in the graph from a given node
+layerwise track (0/1) nodes already visited, this is to escape from falling into an infinite loop
+
+applications - web crawlers, broadcasting peer network, cycle detection in graph, path finding if exists between two vertices

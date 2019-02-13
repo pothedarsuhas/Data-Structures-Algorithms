@@ -1,0 +1,10 @@
+directed graph ~ digraph
+
+graph in which edges have direction
+edge ~ arc
+tree is special digraph
+adj matrix
+
+applications - electric circuit, analysis relationships, project schedules
+
+root has no incoming arc

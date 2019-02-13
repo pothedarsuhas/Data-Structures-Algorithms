@@ -1,0 +1,10 @@
+mst ~ subgraph with all the vertices connected
+n-1 edges for n vertices
+
+undir weighted ~ sum of edges is minimum
+
+
+krushkal's algorithm
+
+dynamic connectivity
+union(connects two nodes in a graph), find(if objects are connected)

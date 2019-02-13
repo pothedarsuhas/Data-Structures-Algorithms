@@ -1,0 +1,7 @@
+vertex ~ node
+edge ~ which connects two nodes
+weight ~ cost for traversing between two adjacent nodes
+graph is undirected if the edges have no direction
+graph is directed if the edges have direction
+path ~ continuous edge combination between any two nodes
+

@@ -1,0 +1,6 @@
+hybrid linear data structure
+
+deque- double-ended queue
+
+no LIFO/FIFO enforcement
+push/pop from front/rear ends

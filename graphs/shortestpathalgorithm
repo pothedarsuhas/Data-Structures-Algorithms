@@ -1,0 +1,12 @@
+djikstra's algorithm
+
+shortest path
+
+unweighted - minimum edges
+weighted - minimum weight
+
+works from any node
+
+Greedy strategy
+
+using stack

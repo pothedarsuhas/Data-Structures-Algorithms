@@ -1,0 +1,5 @@
+graph traversal algorithm operates as a free traversal
+
+detecting cycles(back edge)
+modified dfs helps in path finding
+scheduling jobs using topological sorting
