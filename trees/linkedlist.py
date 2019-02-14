@@ -43,14 +43,15 @@ class linkedlist:
     def traverse(self):
         return self._traverse(self._get_root())
 
-    def circulartraveral(self):
+        def circulartraveral(self):
         r = self._get_root()
 
-        count = 0
+        count = 1
         while r._get_next() is not None:
             print(r._get_data())
             r = r._get_next()
-            if r == self._get_root() and count > 0:
+            if r == self._get_root() and count > 1:
+                print("number of nodes in the circular linked list is", count)
                 break
             count += 1
 
