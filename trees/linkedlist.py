@@ -29,6 +29,9 @@ class linkedlist:
         return self._root
 
     def _traverse(self, node):
+        # if node == self._get_root():
+        #     break
+
         if node is None:
             return None
         # elif id(node) == id(self._get_root()):
@@ -39,6 +42,18 @@ class linkedlist:
 
     def traverse(self):
         return self._traverse(self._get_root())
+
+    def circulartraveral(self):
+        r = self._get_root()
+
+        count = 0
+        while r._get_next() is not None:
+            print(r._get_data())
+            r = r._get_next()
+            if r == self._get_root() and count > 0:
+                break
+            count += 1
+
 
     def search(self, data):
         count = 0
@@ -177,5 +192,5 @@ l.delete_n(5)
 #l.swap_head_tail()
 
 l.make_circle()
-
-l.traverse()
+l.circulartraveral()
+# l.traverse()
