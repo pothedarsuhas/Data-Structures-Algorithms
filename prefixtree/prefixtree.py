@@ -26,18 +26,18 @@ class PrefixTree:
         return True
 
 
-    def __contains__(self, value):  #replicates the behavior of in operator
+    def __contains__(self, value):  # replicates the behavior of in operator
         d = self.head
 
         while len(value) > 0:
             c = value[0]
             if c not in d:
-                return False
+                return False    # returns False if the word is not present
             d = d[c]
             value = value[1:]
 
         if wordkey in d:
-            return d[wordkey]
+            return d[wordkey]   # returns true if the word is present
 
 p = PrefixTree()
 
