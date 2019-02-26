@@ -1,4 +1,9 @@
-wordkey = '/n'
+"""
+Prefix tree implementation with dictionaries
+"""
+
+
+wordkey = '/n' #key for depicting if the word is present or not, similar to '/n' character in C
 
 class PrefixTree:
 
@@ -21,7 +26,7 @@ class PrefixTree:
         return True
 
 
-    def __contains__(self, value):
+    def __contains__(self, value):  #replicates the behavior of in operator
         d = self.head
 
         while len(value) > 0:
