@@ -17,6 +17,25 @@ class node:
         else:
             parent.add(data)
             return parent
+    
+    def closest(self, target):      # finds the closest value in the node when the target is issued
+        node = self.root
+        if node is None:
+            return None
+        best = node
+        distance = abs(node.data - target)
+        while node:
+            if abs(node.data - target) < distance:
+                distance = abs(node.data - target)
+                best = node
+            if node.data < target:
+                node = node.right
+            elif node.data > target:
+                node = node.left
+            else:
+                return target
+        return best.data
+
 
 class BST:
 
